@@ -1,6 +1,6 @@
 ![logo](https://github.com/CharlieBodman/fv-games-boilerplate/blob/master/www/assets/images/logo.png?raw=true)
 
---- 
+---
 
 A firstvoices.com game boilerplate for creating new games that assist in learning indigenous languages.
 
@@ -10,8 +10,13 @@ Games created for firstvoices.com must use [Phaser 2 / Phaser-ce](https://github
 
 *If you wish to submit your game, please email [Need email]*
 
+## Game Criteria
 
-### Steps to start developing 
+- Must support unicode characters
+- Must work with sample data
+
+
+### Steps to start developing
 
 #### Step 1 - Install dependencies
 ```bash
@@ -24,7 +29,8 @@ yarn run develop
 ```
 
 #### Step 3 - Run in browser
+
 Visit http://localhost:8080/ in your browser
 
 
-
+**More details coming soon...**

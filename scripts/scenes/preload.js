@@ -6,9 +6,9 @@ class Preload {
     {
         this.config = configManager.getConfig();
 
-        this.loadingBar = this.game.make.sprite(this.game.world.centerX , 500, "loading");
-        this.logo       = this.game.make.sprite(this.game.world.centerX, 250, 'brand');
-        this.status     = this.game.make.text(this.game.world.centerX, 450, 'Loading...', {fill: 'black'});
+        this.logo       = this.game.make.sprite(this.game.world.centerX, 150, 'brand');
+        this.loadingBar = this.game.make.sprite(this.game.world.centerX , 350, "loading");
+        this.status     = this.game.make.text(this.game.world.centerX, 400, 'Loading...', {fill: 'black'});
 
         this.centerObjects([this.logo, this.status, this.loadingBar]);
     }
@@ -22,7 +22,7 @@ class Preload {
 
     preload()
     {
-        this.game.add.existing(this.logo).scale.setTo(0.5);
+        this.game.add.existing(this.logo).scale.setTo(1.2,1.2);
         this.game.add.existing(this.loadingBar);
         this.game.add.existing(this.status);
         this.game.load.setPreloadSprite(this.loadingBar);
