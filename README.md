@@ -13,7 +13,7 @@ Games created for firstvoices.com must use [Phaser 2 / Phaser-ce](https://github
 ## Game Criteria
 
 - Must support unicode characters
-- Must work with sample data
+- Must work with one set of  [sample data](#sample-data)
 
 
 ### Steps to start developing
@@ -34,3 +34,7 @@ Visit http://localhost:8080/ in your browser
 
 
 **More details coming soon...**
+
+### Sample Data
+[Phrases]()
+[Worlds]()
