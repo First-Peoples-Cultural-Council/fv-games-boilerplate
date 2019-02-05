@@ -38,4 +38,4 @@ Visit http://localhost:8080/ in your browser
 ### Sample Data
 [Phrases](https://github.com/CharlieBodman/fv-games-boilerplate/blob/master/sample_data/phases.js)
 
-[Worlds](https://github.com/CharlieBodman/fv-games-boilerplate/blob/master/sample_data/words.js)
+[Words](https://github.com/CharlieBodman/fv-games-boilerplate/blob/master/sample_data/words.js)
