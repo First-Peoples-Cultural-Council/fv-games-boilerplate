@@ -26,6 +26,11 @@ class Preload {
         this.game.add.existing(this.loadingBar);
         this.game.add.existing(this.status);
         this.game.load.setPreloadSprite(this.loadingBar);
+        
+        this.load.image('fullscreen', this.config.images.fullscreen);
+        this.load.image('unfullscreen', this.config.images.unfullscreen);
+        this.load.image('mute', this.config.images.mute);
+        this.load.image('unmute', this.config.images.unmute);
     }
 
     fade (nextState)

@@ -34,7 +34,7 @@ export default {
         GameConfig.setConfig(config);
 
         //Start Game
-        const game = new Phaser.Game(900, 500, Phaser.CANVAS, containerElement);
+        const game = new Phaser.Game(640, 1136, Phaser.CANVAS, containerElement);
         game.state.add("Boot", Boot);
         game.state.add("Preload", Preload);
         game.state.add("GameTitle", GameTitle);

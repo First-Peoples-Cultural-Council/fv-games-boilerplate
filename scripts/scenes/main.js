@@ -1,6 +1,7 @@
 import configManager from '../config';
+import Base from './base';
 
-class Main {
+class Main extends Base{
 
     init()
     {
@@ -12,20 +13,10 @@ class Main {
 
     }
 
-    fadeIn()
+    create ()
     {
         var game = this.game;
         var gameWidth = game.width;
-
-        var fadeBackground = game.add.graphics(0, 0);
-        fadeBackground.beginFill(0xFFFFFF, 1);
-        fadeBackground.drawRect(0, 0, game.width, game.height);
-        fadeBackground.alpha = 1;
-        fadeBackground.endFill();
-
-        const backgroundTween = game.add.tween(fadeBackground);
-        backgroundTween.to({ alpha: 0 }, 500, null);
-        backgroundTween.start();
 
         var bar = game.add.graphics();
         bar.beginFill(0xb40000, 1);
@@ -39,11 +30,10 @@ class Main {
 
         //  We'll set the bounds to be from x0, y100 and be gameWidthpx wide by 100px high
         text.setTextBounds(0, 100, gameWidth, 100);
-    }
-
-    create ()
-    {
+        
         this.fadeIn();
+        this.createMuteButton();
+        this.createFullscreenButton();
     }
 }
 
